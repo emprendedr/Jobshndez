@@ -565,9 +565,9 @@
         }
 
         /* ===========================
-           SECCIÓN FORMULARIO
+           SECCIÓN DE ACCESO DIRECTO
            =========================== */
-        .form-section {
+        .access-section {
             background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
             padding: 5rem 2rem;
             border-radius: 30px;
@@ -576,46 +576,46 @@
             border: 1px solid rgba(96, 165, 250, 0.2);
         }
 
-        .form-container {
+        .access-container {
             max-width: 600px;
             margin: 0 auto;
         }
 
-        .form-group {
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.8rem;
-            color: #cbd5e1;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 1.2rem;
-            background: rgba(15, 23, 42, 0.7);
-            border: 1px solid rgba(100, 116, 139, 0.5);
-            border-radius: 12px;
-            color: #f8fafc;
-            font-size: 1rem;
+        .direct-access-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(90deg, #10b981, #22d3ee);
+            color: white;
+            padding: 1.5rem 3.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.4rem;
             transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 500px;
         }
 
-        .form-input:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        .direct-access-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
         }
 
-        .form-note {
+        .button-icon {
+            font-size: 1.8rem;
+        }
+
+        .access-note {
             color: #94a3b8;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            display: block;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            font-style: italic;
         }
 
         /* ===========================
@@ -742,6 +742,11 @@
             .upgrade-countdown-number {
                 font-size: 2rem;
             }
+
+            .direct-access-button {
+                padding: 1.2rem 2rem;
+                font-size: 1.2rem;
+            }
         }
 
         /* ===========================
@@ -774,7 +779,7 @@
                     <li><a href="#videos">Videos</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#acceso">Acceso Pre-Lanzamiento</a></li>
+                    <li><a href="#acceso">Acceso Directo</a></li>
                 </ul>
             </nav>
         </div>
@@ -1024,52 +1029,32 @@
     </section>
 
     <!-- ===========================
-         SECCIÓN FORMULARIO
+         SECCIÓN DE ACCESO DIRECTO
          =========================== -->
-    <section class="form-section" id="acceso">
+    <section class="access-section" id="acceso">
         <div class="container">
             <div class="section-title">
-                <h2>📩 Acceso Anticipado Exclusivo</h2>
-                <p class="section-subtitle">Solo durante el período de pre-lanzamiento</p>
+                <h2>🚀 ACCESO DIRECTO INMEDIATO</h2>
+                <p class="section-subtitle">Haz clic en el botón para acceder directamente</p>
             </div>
 
-            <div class="form-container">
+            <div class="access-container">
                 <p style="margin-bottom: 2rem; font-size: 1.2rem; color: #cbd5e1;">
-                    <strong>🔥 BENEFICIOS CLAVE:</strong><br>
+                    <strong>🔥 BENEFICIOS QUE OBTIENES:</strong><br>
                     • Crece aunque seas nuevo • Ahorra tiempo y energía • Resultados más rápidos<br>
                     • Automatiza el 80% del trabajo • Atrae personas todo el día • Duplica fácilmente a tu equipo
                 </p>
 
                 <div class="pre-launch-badge" style="margin-bottom: 2rem;">⚠️ ÚLTIMOS DÍAS DE ACCESO ANTICIPADO</div>
 
-                <form id="accessForm" style="text-align: left;">
-                    <div class="form-group">
-                        <label for="name">👉 Nombre Completo</label>
-                        <input type="text" id="name" class="form-input" placeholder="Tu nombre y apellido" required>
-                    </div>
+                <!-- BOTÓN DIRECTO - SIN FORMULARIO -->
+                <a href="https://aiviraldownline.com/lc.php?id=Jobshndez" class="direct-access-button" target="_blank">
+                    <span class="button-icon">🚀</span>
+                    ¡DESBLOQUEAR PRUEBA DE 7 DÍAS GRATIS AHORA!
+                </a>
 
-                    <div class="form-group">
-                        <label for="email">👉 Correo Electrónico</label>
-                        <input type="email" id="email" class="form-input" placeholder="tu@email.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">👉 Teléfono (Opcional)</label>
-                        <input type="tel" id="phone" class="form-input" placeholder="+34 600 000 000">
-                        <span class="form-note">Para contacto personalizado si lo prefieres</span>
-                    </div>
-
-                    <button type="submit" class="cta-button" style="width: 100%; justify-content: center;">
-                        🚀 DESBLOQUEAR PRUEBA DE 7 DÍAS GRATIS
-                    </button>
-                </form>
-
-                <p style="margin-top: 2rem; color: #94a3b8; font-size: 0.9rem;">
-                    O accede directamente: 
-                    <a href="https://aiviraldownline.com/lc.php?id=Jobshndez" 
-                       style="color: #60a5fa; text-decoration: underline;">
-                        https://aiviraldownline.com/lc.php?id=Jobshndez
-                    </a>
+                <p class="access-note">
+                    * Acceso inmediato sin necesidad de llenar formularios
                 </p>
             </div>
         </div>
@@ -1212,18 +1197,6 @@
                     }
                 }
             });
-        });
-
-        // Manejo del formulario
-        document.getElementById('accessForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            
-            // Redirigir al enlace de acceso
-            window.location.href = 'https://aiviraldownline.com/lc.php?id=Jobshndez';
         });
 
         // Agregar animación flotante a algunos elementos
